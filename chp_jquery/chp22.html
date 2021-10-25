@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var pw = "123123";
+
+    var user_id = prompt("아이디는?","");
+    
+    if (user_id == "a" || user_id == "b" || user_id == "c") {
+        var user_pw = prompt("비밀번호는?","");
+        if(pw == user_pw) {
+            var gender = prompt("사용자의 성별은?","");
+            var age = prompt("사용자의 나이는?" ,"");
+            var phone = prompt("사용자의 전화번호는?" ,"");
+            var hobby = prompt("사용자의 취미는?","");
+            document.write(user_id + "사용자님의 성별은 " + gender + ", 나이는 " + age + ", 전화번호는 " + phone + ", 취미는 " + hobby +  "입니다.");
+           
+        }else {
+            alert("비밀번호가 일치하지 않습니다.");
+            location.reload();
+        }
+    }else{
+        alert("아이디가 일치하지 않습니다.");
+        location.reload();
+    }
+    </script>
+</body>
+</html>
